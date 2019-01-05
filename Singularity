@@ -11,11 +11,11 @@ MAINTAINER darachm
 %post
 
     apt-get -y update
-    apt-get -y install gcc-4.8 git make g++
+    apt-get -y install gcc-4.8 git make g++ python
     git clone https://github.com/LaoZZZZZ/bartender-1.1.git
     cd bartender-1.1
     make all
-    sudo make install
+    make install
 
 %test
 
